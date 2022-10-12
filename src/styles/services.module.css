@@ -1,0 +1,31 @@
+h3, p{
+    text-align: center;
+}
+h3{
+    width: 50%;
+    margin-left: 50%;
+    margin-bottom: 50px;
+    margin-bottom: 2rem;
+    transform: translate(-50%, 50%);
+    color: #D2001A;
+}
+
+hr {
+    margin-left: 50%;
+    margin-bottom: 50px;
+    transform: translate(-50%, 50%);
+    height: 0.6vh;
+    width: 50%;
+    max-width: 300px;
+    background-color: #D2001A;
+  }
+
+p{
+    font-size: 0.8rem;
+    max-width: 800px;
+    margin: 2vh auto;
+}
+
+.section{
+    margin: 5vh auto;
+}

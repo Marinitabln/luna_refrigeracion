@@ -1,0 +1,64 @@
+.header{
+   
+    color: white;
+    background-color: #16213E;
+    width: 100%;
+    height: 15vh;    
+    position: sticky;
+    /* gap: 1rem; */
+  }
+
+.divHeader{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  height: 15vh;  
+}
+
+.rowFlexEnd{
+  align-items: flex-end;
+}
+
+.textLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo img{
+  height: 50px;
+}
+  
+
+.whatsappBar{
+  justify-content: space-between;
+}
+
+.rowWhatsappBar{
+  justify-content: space-between;
+  align-items: flex-end; 
+}
+
+.whatsapp{
+  margin-bottom: -6.5px;
+}
+.whatsapp span{
+  font-size: 0.6rem;  
+}
+
+.bars{ 
+  color: white;
+  text-align: right;  
+  font-size: 35px;  
+  margin-bottom: -15.5px;
+}
+
+.bars button{ 
+  background-color:#16213E;
+  color: white;
+}
