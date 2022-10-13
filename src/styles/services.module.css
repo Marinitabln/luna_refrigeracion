@@ -1,22 +1,20 @@
 h3, p{
     text-align: center;
 }
-h3{
-    width: 50%;
+.subtitleRed{
+    width: 60%;
     margin-left: 50%;
     margin-bottom: 50px;
-    margin-bottom: 2rem;
     transform: translate(-50%, 50%);
     color: #D2001A;
 }
 
-hr {
-    margin:3rem 50% 20px 50% !important;
-    transform: translate(-50%, 50%);
-    height: 0.6vh;
-    width: 50%;
-    max-width: 300px;
-    background-color: #D2001A;
+.line {
+    border-top: 3.5px solid #D2001A;
+    height: 10px;
+    width: 150px;
+    padding: 0;
+    margin: 50px auto 0 auto;
   }
 
 .pSection{
@@ -31,5 +29,5 @@ p{
 }
 
 .section{
-    margin: 5vh auto 10vh auto;
+    margin: 5vh auto 8vh auto;
 }

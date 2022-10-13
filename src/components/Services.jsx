@@ -6,10 +6,10 @@ const Services = () => {
   return (
     <section className={Styles.section}>
       <Container>
-        <h3>
+        <h3 className={Styles.subtitleRed}>
           nuestros <strong>SERVICIOS</strong>
         </h3>
-        <hr></hr>
+        <div className={Styles.line}></div>
         <article className={Styles.pSection}>
           <p>
             Brindamos <strong>servicio a domicilio</strong> de reparación de

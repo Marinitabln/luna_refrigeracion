@@ -10,11 +10,11 @@ import longvie from "../assets/img/longvie.png";
 import patrick from "../assets/img/patrick.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/swiper-bundle.css";
 import { Container } from "react-bootstrap";
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Autoplay]);
 
 const SliderBrands = () => {
   return (
@@ -29,8 +29,7 @@ const SliderBrands = () => {
             style={{
               "--swiper-navigation-color": "#666",
               "--swiper-navigation-size": "15px",
-              "marginTop": "20px"
-             
+              marginTop: "20px",
             }}
             breakpoints={{
               // when window width is >= 640px
@@ -47,43 +46,50 @@ const SliderBrands = () => {
               768: {
                 width: 768,
                 slidesPerView: 7,
+                
               },
             }}
             id="main"
             width="360"
             navigation
-            spaceBetween={5}
+            spaceBetween={-5}
             slidesPerView={3}
+            centeredSlides={true}
             speed={1000}
+            loop={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
           >
-            
-              <SwiperSlide>
-                <img style={{ height: "5vh" }} src={whirpool} alt="Whirpool" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img style={{ height: "5vh" }} src={lg} alt="LG" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img style={{ height: "5vh" }} src={samsung} alt="Samsung" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img style={{ height: "5vh" }} src={drean} alt="Drean" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img style={{ height: "5vh" }} src={peabody} alt="Peabody" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img style={{ height: "5vh" }} src={patrick} alt="Patrick" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img style={{ height: "5vh" }} src={candy} alt="Candy" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img style={{ height: "5vh" }} src={longvie} alt="Longvie" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img style={{ height: "5vh" }} src={ariston} alt="Ariston" />
-              </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ height: "5vh" }} src={whirpool} alt="Whirpool" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ height: "5vh" }} src={lg} alt="LG" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ height: "5vh" }} src={samsung} alt="Samsung" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ height: "5vh" }} src={drean} alt="Drean" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ height: "5vh" }} src={peabody} alt="Peabody" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ height: "5vh" }} src={patrick} alt="Patrick" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ height: "5vh" }} src={candy} alt="Candy" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ height: "5vh" }} src={longvie} alt="Longvie" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ height: "5vh" }} src={ariston} alt="Ariston" />
+            </SwiperSlide>
           </Swiper>
         </Container>
       </div>

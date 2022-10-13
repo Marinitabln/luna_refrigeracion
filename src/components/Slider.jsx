@@ -12,9 +12,9 @@ const Slider = () =>{
        if(window.innerWidth <= 767){
           setMedia("500px")
        }else if(window.innerWidth >= 768 && window.innerWidth <= 991 ){
-        setMedia("560px")
+        setMedia("400px")
        }else{
-        setMedia("760px")
+        setMedia("auto")
        }
         
       }    
