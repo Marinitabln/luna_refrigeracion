@@ -11,8 +11,7 @@ h3{
 }
 
 hr {
-    margin-left: 50%;
-    margin-bottom: 50px;
+    margin:3rem 50% 20px 50% !important;
     transform: translate(-50%, 50%);
     height: 0.6vh;
     width: 50%;
@@ -20,12 +19,17 @@ hr {
     background-color: #D2001A;
   }
 
+.pSection{
+    margin: 40px auto;
+    max-width: 700px;
+  }
+
 p{
+    text-align: center;
     font-size: 0.8rem;
     max-width: 800px;
-    margin: 2vh auto;
 }
 
 .section{
-    margin: 5vh auto;
+    margin: 5vh auto 10vh auto;
 }
