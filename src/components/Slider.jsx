@@ -16,13 +16,14 @@ const Slider = () =>{
        }else{
         setMedia("auto")
        }
-        
       }    
       window.addEventListener('resize', handleResize);
       return () => {
        window.removeEventListener('resize', handleResize);
       };    
     }, []);    
+
+    
   
     return (
       <Carousel>
@@ -36,7 +37,8 @@ const Slider = () =>{
           <Carousel.Caption style={{ bottom: '35%' }}>
             <h4>reparación de</h4>
             <h1>HELADERAS <strong>NO-FROST</strong></h1>
-            <h6>y convencionales</h6>
+            <h5>y convencionales</h5>
+            <button ></button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -45,12 +47,11 @@ const Slider = () =>{
             src={slider2}
             height={media}
             alt="Reparación de lavarropas digitales y mecánicos"
-          />
-  
+          />  
           <Carousel.Caption style={{ bottom: '35%' }}>
             <h4>reparación de</h4>
             <h2 className="h1">LAVARROPAS <strong>DIGITALES</strong></h2>
-            <h6>y mecánicos</h6>
+            <h5>y mecánicos</h5>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -62,7 +63,8 @@ const Slider = () =>{
           <Carousel.Caption style={{ bottom: '35%' }}>
           <h4>instalación y reparación de</h4>
             <h2 className="h1">EQUIPOS DE AIRE <strong>ACONDICIONADO</strong></h2>
-            <h6>split | compacto | portátil</h6>
+            <h5>split | compacto | portátil</h5>
+
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

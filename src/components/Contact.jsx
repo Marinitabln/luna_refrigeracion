@@ -1,22 +1,30 @@
 import { Container } from "react-bootstrap";
-import styles from "../styles/contact.module.css";
+import Styles from "../styles/section.module.css";
+import Form from "./Form";
 
 const Contact = () => {
-  return (
-    <section className={styles.bgBlue}>
-      <Container>
-        <h3 className={styles.subtitleWhite}>
-          cómo <strong>CONTACTARNOS</strong>
-        </h3>
-        <div className={styles.line}></div>
-        <div className={styles.containerItems}>
-         <div id="item-1">
-            
-         </div>
 
-        </div>
-      </Container>
-    </section>
+  return (
+    <>
+      <section className={Styles.section}>
+        <Container>
+          <h3 className={Styles.subtitleRed}>
+            pedir <br></br>
+            <strong>PRESUPUESTO</strong>
+          </h3>
+          <div className={Styles.line}></div>
+          <article className={Styles.pSection}>
+            <p>
+              Para solicitar una cotización, puede dejarnos sus datos en el
+              siguiente formulario o contactarnos a través de las opciones que
+              figuran a continuación.
+            </p>
+            <p>A la brevedad, nos pondremos en contacto con Ud.</p>
+          </article>
+          <Form />
+        </Container>
+      </section>
+    </>
   );
 };
 

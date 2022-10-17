@@ -6,15 +6,6 @@
     color: #666;
   }
   
-.sliderBrands h6{
-    width: 50%;
-    margin-left: 50%;
-    transform: translate(-50%, 30%);
-    font-size: small;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
 
 .swiper-container {
   width: 360px;
@@ -44,6 +35,10 @@
 }
 
 @media screen and (min-width: 480px) {
+
+  .sliderBrands {
+      height: 23vh;   
+  }
     .swiper-container {
       width: 480px;
     }
@@ -57,6 +52,7 @@
     #bp-4800 {
       display: inline !important;
     }
+
   }
   
   @media screen and (min-width: 640px) {

@@ -1,6 +1,5 @@
 import Services from "./Services";
 import Slider from "./Slider";
-import Contact from "./Contact";
 import styled from "styled-components";
 
 const Home = () => {
@@ -18,7 +17,6 @@ const Home = () => {
       <Slider />
       <Spacer></Spacer>
       <Services />
-      <Contact />
     </>
   );
 };

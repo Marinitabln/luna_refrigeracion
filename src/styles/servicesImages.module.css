@@ -1,0 +1,36 @@
+
+
+.bgBlue {
+  background-color: #16213e;
+  margin: 5vh auto 0 auto;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  color: white;
+}
+
+.containerImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: -15px auto 0 auto;
+  width: 80%;
+}
+
+.divImg img{
+padding: 10px auto;
+margin: 10px auto;
+width: 100%;
+}
+
+
+
+@media only screen and (min-width: 624px) {
+  .containerImages {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .divImg{
+    width: 32%;
+    }
+}
