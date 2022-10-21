@@ -22,22 +22,26 @@ const Header = () => {
       <div className={styles.divHeader}>
         <Container>
           <Row className={styles.rowFlexEnd}>
-            <Col className={styles.logo} xs={6} md={4} lg={4}>
-              <Link to="/"><img id="logo" src={logo} alt="logo" /></Link>
+            <Col className={styles.logo} xs={5} md={4} lg={4}>
+              <Link to="/">
+                <img id="logo" src={logo} alt="logo" />
+              </Link>
             </Col>
-            <Col className={styles.whatsappBar} xs={6} md={8} lg={8}>
-              <Row className={styles.rowWhatsappBar}>
-                <Col className={styles.whatsapp} xs={8}>
-                  <a href="https://walink.co/616498" target="_blank" rel="noopener noreferrer"> 
-                    <FontAwesomeIcon icon={faWhatsapp} />
-                    <span> CONTACTANOS</span>
-                  </a>
-                </Col>
-                <Col className={styles.bars} xs={4}>
-                  <Navbar open={open} />
-                  <MenuButton open={open} handleClick={handleClick} />                  
-                </Col>
-              </Row>
+            <Col className={styles.whatsappBar} xs={7} md={8} lg={8}>
+              <div className={styles.whatsapp}>
+                <a
+                  href="https://walink.co/616498"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faWhatsapp} />
+                  <span> CONTACTANOS</span>
+                </a>
+              </div>
+              <div className={styles.bars}>
+                <Navbar open={open} />
+                <MenuButton open={open} handleClick={handleClick} />
+              </div>
             </Col>
           </Row>
         </Container>

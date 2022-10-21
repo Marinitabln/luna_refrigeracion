@@ -1,17 +1,19 @@
 import React from "react";
-import { NavLink } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+
 
 const NavbarWrapper = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: right;
-  background: #f5f5f5;
+  background-color: rgba(239, 239, 239, 0.85);
   color: #16213e;
   font-size: 12px;
   font-weight: 700;
   line-height: 400%;
+  border-bottom-left-radius: 5%;
   position: fixed;
   top: 15vh;
   right: ${(props) => (props.open ? "0" : "-100%")};
@@ -27,20 +29,36 @@ const NavbarWrapper = styled.nav`
     position: initial;
     height: auto;
     justify-content: flex-end;
-    color: white;
+    color: white !important;
     background: none;
+    padding-right: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    gap: 10px;
   }
 `;
 
-function Navbar({ open }) {
+const Navbar = ({ open }) => {
+  const active = ({ isActive }) => ({
+    color: isActive ? "#d2001a" : ""  
+  });
+
   return (
     <NavbarWrapper open={open}>
-      <NavLink to="/">INICIO</NavLink>
-      <NavLink to="/about">NOSOTROS</NavLink>
-      <NavLink to="/services">SERVICIOS</NavLink>
-      <NavLink to="/contact">CONTACTO</NavLink>
+      <NavLink to="/" style={active}>
+        INICIO
+      </NavLink>
+      <NavLink to="/about" style={active}>
+        NOSOTROS
+      </NavLink>
+      <NavLink to="/services" style={active}>
+        SERVICIOS
+      </NavLink>
+      <NavLink to="/contact" style={active}>
+        CONTACTO
+      </NavLink>
     </NavbarWrapper>
   );
-}
+};
 
 export default Navbar;

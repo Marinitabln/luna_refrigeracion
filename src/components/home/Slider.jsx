@@ -44,7 +44,7 @@ const Slider = () =>{
             <h4>reparación de</h4>
             <h1>HELADERAS <strong>NO-FROST</strong></h1>
             <h5>y convencionales</h5>
-            <button className={styles.buttonLine}>solicitar presupuesto</button>
+            <button className={styles.buttonLine} onClick={linkToContact}>solicitar presupuesto</button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -71,7 +71,7 @@ const Slider = () =>{
           <h4>instalación y reparación de</h4>
             <h2 className="h1">EQUIPOS DE AIRE <strong>ACONDICIONADO</strong></h2>
             <h5>split | compacto | portátil</h5>
-            <button className={styles.buttonLine}>solicitar presupuesto</button>
+            <button className={styles.buttonLine} onClick={linkToContact}>solicitar presupuesto</button>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

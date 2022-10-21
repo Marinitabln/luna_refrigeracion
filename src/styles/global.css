@@ -1,55 +1,60 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
 }
-h3, p{
-    text-align: center;
-    z-index: 1;
-}
-
-h3{  
-    font-size: 1.5rem;
+h3,
+p {
+  text-align: center;
+  z-index: 1;
 }
 
-h5{  
-    font-size: 1.2rem;
+h3 {
+  font-size: 1.5rem;
 }
 
-h6{
-    width: 50%;
-    margin-left: 50%;
-    transform: translate(-50%, 30%);
-    font-size: 0.6rem;
-    text-align: center;
-    margin-bottom: 10px;
+h5 {
+  font-size: 1.2rem;
 }
 
-p{
-    text-align: center;
-    font-size: 0.7rem;
-    width: 300px;
-    margin-left: 50%;
-    transform: translate(-50%);
-    
+h6 {
+  width: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, 30%);
+  font-size: 0.6rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-ul{
-    margin-top: 10px;
-    padding-left: 0;
+p {
+  text-align: center;
+  font-size: 0.7rem;
+  width: 300px;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 
-li{
-    list-style: none;
+ul {
+  margin-top: 10px;
+  padding-left: 0;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 @media only screen and (min-width: 460px) {
-   p{
+  p {
     width: auto;
     max-width: 700px;
     margin-left: 0;
     transform: none;
-   }
   }
-
+}
