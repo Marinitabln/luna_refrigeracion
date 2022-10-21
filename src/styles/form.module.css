@@ -31,7 +31,7 @@ textarea {
   height: 100px;
 }
 
-.buttonForm {
+.buttonSolid {
   background-color: #16213e;
   color: white;
   font-weight: 700;
@@ -74,9 +74,10 @@ textarea {
   input, textarea{
     width: 100%;
     text-align: left;
+    padding-left: 15px;
   }
   textarea {
-    height: 170px;
+    height: 230px;
     
   }
 }

@@ -1,28 +1,33 @@
+import React from "react";
 import { Container } from "react-bootstrap";
-import Styles from "../styles/section.module.css";
+import styles from "../styles/section.module.css";
+import { faCircleDot} from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const About = () => {
+
+ 
   return (
-    <section className={Styles.section}>
+    <section className={styles.section}>
       <Container>
-        <h3 className={Styles.subtitleRed}>
+        <h3 className={styles.subtitleRed}>
           sobre <br></br>
           <strong>NOSOTROS</strong>
         </h3>
-        <div className={Styles.line}></div>
-        <article className={Styles.pSection}>
+        <div className={styles.line}></div>
+        <article className={styles.pSection}>
           <p>
-            Somos una empresa familiar que,{" "}
+            Somos una empresa familiar que,
             <strong>desde 1984, nos especializamos</strong> en la reparación de
             electrodomésticos de línea blanca, para clientes residenciales y
             empresas.
           </p>
-          <p>
+          <p >
             Los pilares de nuestro trabajo son:
-            <ul>
-              <li>Cumplimiento y Puntualidad;</li>
-              <li>Calidad en atención;</li>
-              <li>Responsabilidad y Confiabilidad.</li>
+            <ul className={styles.pilares}>
+              <li><FontAwesomeIcon icon={faCircleDot} color="#D2001A" size="small"/> Cumplimiento y Puntualidad;</li>
+              <li><FontAwesomeIcon icon={faCircleDot} color="#D2001A"/> Calidad en atención;</li>
+              <li><FontAwesomeIcon icon={faCircleDot} color="#D2001A"/> Responsabilidad y Confiabilidad.</li>
             </ul>
           </p>
         </article>

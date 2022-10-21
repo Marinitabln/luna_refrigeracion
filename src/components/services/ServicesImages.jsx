@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../styles/servicesImages.module.css";
-import heladera from "../assets/img/service1.jpg";
-import lavarropa from "../assets/img/service2.jpg";
-import aire from "../assets/img/service3.jpg";
+import styles from "../../styles/servicesImages.module.css";
+import heladera from "../../assets/img/service1.jpg";
+import lavarropa from "../../assets/img/service2.jpg";
+import aire from "../../assets/img/service3.jpg";
 import { Container } from "react-bootstrap";
 
 const ServicesImages = () => {

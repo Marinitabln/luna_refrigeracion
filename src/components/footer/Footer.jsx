@@ -1,9 +1,10 @@
+import React from "react";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import Map from "../components/Map";
-import styles from "../styles/contact.module.css";
+import Map from "./Map";
+import styles from "../../styles/contact.module.css";
 
 const Footer = () => {
   return (

@@ -51,11 +51,17 @@ width: 100%;
   font-weight: 700;
 }
 
-.containerItems a {
+
+.containerItems a:link, .containerItems a:visited  {
   text-decoration: none;
   color: white;
   font-size: 0.8rem;
   font-weight: 700;
+}
+
+.containerItems a:hover  {
+  color: #D2001A;
+  transition: 0.5s;
 }
 
 @media only screen and (min-width: 624px) {

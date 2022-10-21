@@ -1,13 +1,14 @@
-import styles from "../styles/sliderBrands.module.css";
-import whirpool from "../assets/img/whirpool.png";
-import samsung from "../assets/img/samsung.png";
-import lg from "../assets/img/lg.png";
-import candy from "../assets/img/candy.png";
-import peabody from "../assets/img/peabody.png";
-import ariston from "../assets/img/ariston.png";
-import drean from "../assets/img/drean.png";
-import longvie from "../assets/img/longvie.png";
-import patrick from "../assets/img/patrick.png";
+import React from "react";
+import styles from "../../styles/sliderBrands.module.css";
+import whirpool from "../../assets/img/whirpool.png";
+import samsung from "../../assets/img/samsung.png";
+import lg from "../../assets/img/lg.png";
+import candy from "../../assets/img/candy.png";
+import peabody from "../../assets/img/peabody.png"
+import ariston from "../../assets/img/ariston.png";
+import drean from "../../assets/img/drean.png";
+import longvie from "../../assets/img/longvie.png";
+import patrick from "../../assets/img/patrick.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";

@@ -1,5 +1,6 @@
+import React from "react";
 import { Container } from "react-bootstrap";
-import Styles from "../styles/section.module.css";
+import Styles from "../../styles/section.module.css";
 import SliderBrands from "./SliderBrands";
 
 const Services = () => {

@@ -1,4 +1,5 @@
 //import { NavLink } from "react-router-dom";
+import React from "react";
 import styles from "../styles/header.module.css";
 import logo from "../assets/img/luna_refrigeracion_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,8 +7,8 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
-import MenuButton from "./MenuBotton";
+import Navbar from "../components/home/Navbar";
+import MenuButton from "../components/home/MenuBotton";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
             <Col className={styles.whatsappBar} xs={6} md={8} lg={8}>
               <Row className={styles.rowWhatsappBar}>
                 <Col className={styles.whatsapp} xs={8}>
-                  <a href="https://walink.co/616498" className={styles.textLink} target="_blank" rel="noopener noreferrer"> 
+                  <a href="https://walink.co/616498" target="_blank" rel="noopener noreferrer"> 
                     <FontAwesomeIcon icon={faWhatsapp} />
                     <span> CONTACTANOS</span>
                   </a>

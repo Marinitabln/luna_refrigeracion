@@ -1,6 +1,7 @@
+import React from "react";
 import emailjs from "emailjs-com";
 import { useState, useRef } from "react";
-import styles from "../styles/form.module.css";
+import styles from "../../styles/form.module.css";
 
 const Form = () => {
   const [resOk, setResOK] = useState(false);
@@ -33,7 +34,7 @@ const Form = () => {
   }
   const form = useRef();
 
-  return !setResOK ? (
+  return !resOk ? (
     <form ref={form} onSubmit={enviarEmail}>
       <div className={styles.containerInputs}>
         <div className={styles.divInputs}>
@@ -80,7 +81,7 @@ const Form = () => {
         </div>
       </div>
       <span className={styles.spanForm}>(*) Campo obligatorio</span>
-      <button className={styles.buttonForm} type="submit">
+      <button className={styles.buttonSolid} type="submit">
         enviar
       </button>
     </form>
@@ -88,8 +89,7 @@ const Form = () => {
     <>
       <div >
         <p className={styles.messageOk}>
-          ¡Su mensaje fue enviado exitosamente! A la brevedad nos
-          pondremos en contacto con Ud.
+          ¡Su mensaje fue enviado exitosamente! Muchas gracias por escribirnos
         </p>
       </div>
       <button className={styles.buttonForm} onClick={resetForm}>

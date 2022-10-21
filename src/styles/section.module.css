@@ -22,3 +22,13 @@
 .section{
     margin: 5vh auto 8vh auto;
 }
+
+.pilares{
+  text-align: left;
+  padding-left: 50px;
+  line-height: 25px;
+  font-weight: 600;
+  font-style: italic;
+
+}
+
