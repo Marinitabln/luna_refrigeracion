@@ -23,12 +23,41 @@
     margin: 5vh auto 8vh auto;
 }
 
-.pilares{
-  text-align: left;
-  padding-left: 50px;
+.pilaresImg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
   line-height: 25px;
-  font-weight: 600;
-  font-style: italic;
-
+  font-weight: 500;
+  
 }
+
+.pilares li{
+  font-style: italic;
+}
+
+.imgAbout{
+  width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+
+  .pilaresImg{
+    flex-direction: row;
+    text-align: left;
+  }
+  .pilares{
+    order: 5;
+    
+    padding-left: 25px;
+  }
+
+  .imgAbout{
+    
+    max-width: 300px;
+  }
+}
+
 
