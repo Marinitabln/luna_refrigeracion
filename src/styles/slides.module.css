@@ -1,13 +1,16 @@
 .buttonLine {
-  background-color:transparent;
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 700;
-    width: 156px;
-    height: 35px;
-    border: 1.5px solid white;
-    border-radius: 1rem;
-    margin-top: 25px;
-    /* margin-left: 50%;
-    transform: translate(-50%); */
-  }
+  background-color: transparent;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  width: 156px;
+  height: 35px;
+  border: 1.5px solid white;
+  border-radius: 1rem;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+.buttonLine:hover {
+  border: 1.5px solid #d2001a;
+  color: #d2001a;
+}
