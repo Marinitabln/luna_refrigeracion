@@ -34,7 +34,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faWhatsapp} size="2x" />
             <ul>
               <li>
-                <a href="https://walink.co/616498">2615253922</a>
+                <a href="https://walink.co/616498" target="_blank" rel="noopener noreferrer">2615253922</a>
               </li>
             </ul>
           </div>

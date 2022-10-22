@@ -6,6 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import nosotros from "../assets/img/aboutUs.jpg";
 
 const About = () => {
+
+  const icon =  <FontAwesomeIcon
+  icon={faCircleDot}
+  color="#D2001A"
+  size="small"
+  style={{ marginRight: 10 }}
+/>;
   return (
     <section className={styles.section}>
       <Container>
@@ -21,33 +28,29 @@ const About = () => {
             electrodomésticos de línea blanca, para clientes residenciales y
             empresas.
           </p>
-          
-            <div className={styles.pilaresImg}>
-              <ul className={styles.pilares}>
-                <span>Los pilares de nuestro trabajo son:</span>
-                <li>
-                  <FontAwesomeIcon
-                    icon={faCircleDot}
-                    color="#D2001A"
-                    size="small"
-                  />  Cumplimiento y Puntualidad;
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCircleDot} color="#D2001A" />  Calidad
-                  en atención;
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCircleDot} color="#D2001A" />  Responsabilidad y Confiabilidad.
-                </li>
-              </ul>
-              <picture>
-                <img
-                  src={nosotros}
-                  alt="Empresa familiar"
-                  className={styles.imgAbout}
-                />
-              </picture>
-            </div>
+
+          <div className={styles.pilaresImg}>
+            <ul className={styles.pilares}>
+              <span>Los pilares de nuestro trabajo son:</span>
+              <li>{icon}
+               Cumplimiento y Puntualidad;
+              </li>
+              <li>
+                {icon}Calidad
+                en atención;
+              </li>
+              <li>
+                {icon}Responsabilidad y Confiabilidad.
+              </li>
+            </ul>
+            <picture>
+              <img
+                src={nosotros}
+                alt="Empresa familiar"
+                className={styles.imgAbout}
+              />
+            </picture>
+          </div>
         </article>
       </Container>
     </section>

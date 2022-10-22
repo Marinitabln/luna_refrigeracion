@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-
 const NavbarWrapper = styled.nav`
   display: flex;
   flex-direction: column;
@@ -24,6 +23,12 @@ const NavbarWrapper = styled.nav`
   padding-top: 2.5%;
   z-index: 99999;
 
+ ${'' /*  [aria-current="page"] {
+    color: ({ isActive }) => ({
+    color: isActive ? "#d2001a" : "",
+  });
+  } */}
+
   @media only screen and (min-width: 624px) {
     flex-direction: row;
     position: initial;
@@ -40,7 +45,7 @@ const NavbarWrapper = styled.nav`
 
 const Navbar = ({ open }) => {
   const active = ({ isActive }) => ({
-    color: isActive ? "#d2001a" : ""  
+    color: isActive ? "#d2001a" : "",
   });
 
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import { Container} from "react-bootstrap";
 import emailjs from "emailjs-com";
 import { useState, useRef } from "react";
 import styles from "../../styles/form.module.css";
@@ -28,73 +29,74 @@ const Form = () => {
       );
   };
 
-  const resetForm = ()=>{
+  const resetForm = () => {
     setResOK(false);
-
-  }
+  };
   const form = useRef();
 
   return !resOk ? (
-    <form ref={form} onSubmit={enviarEmail}>
-      <div className={styles.containerInputs}>
-        <div className={styles.divInputs}>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Nombre y apellido*"
-            required
-          />
+    <Container>
+      <form ref={form} onSubmit={enviarEmail}>
+        <div className={styles.containerInputs}>
+          <div className={styles.divInputs}>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre y apellido*"
+              required
+            />
 
-          <input
-            type="tel"
-            id="celular"
-            name="celular"
-            placeholder="Celular*"
-            required
-          />
+            <input
+              type="tel"
+              id="celular"
+              name="celular"
+              placeholder="Celular*"
+              required
+            />
 
-          <input
-            type="mail"
-            id="email"
-            name="email"
-            placeholder="Email*"
-            required
-          />
+            <input
+              type="mail"
+              id="email"
+              name="email"
+              placeholder="Email*"
+              required
+            />
 
-          <input
-            type="text"
-            id="direccion"
-            name="direccion"
-            placeholder="Dirección*"
-            required
-          />
+            <input
+              type="text"
+              id="direccion"
+              name="direccion"
+              placeholder="Dirección*"
+              required
+            />
+          </div>
+          <div className={styles.divTextarea}>
+            <textarea
+              type="text"
+              id="mensaje"
+              name="mensaje"
+              placeholder="Mensaje*"
+              required
+            ></textarea>
+          </div>
         </div>
-        <div className={styles.divTextarea}>
-          <textarea
-            type="text"
-            id="mensaje"
-            name="mensaje"
-            placeholder="Mensaje*"
-            required
-          ></textarea>
-        </div>
-      </div>
-      <span className={styles.spanForm}>(*) Campo obligatorio</span>
-      <button className={styles.buttonSolid} type="submit">
-        enviar
-      </button>
-    </form>
+        <span className={styles.spanForm}>(*) Campo obligatorio</span>
+        <button className={styles.buttonSolid} type="submit">
+          enviar
+        </button>
+      </form>
+    </Container>
   ) : (
     <>
-      <div >
+      <Container>
         <p className={styles.messageOk}>
-          ¡Su mensaje fue enviado exitosamente! Muchas gracias por escribirnos
+        ¡Su mensaje fue enviado exitosamente!<br></br>Muchas gracias por escribirnos.
         </p>
-      </div>
-      <button className={styles.buttonForm} onClick={resetForm}>
-        nuevo mensaje
-      </button>
+        <button className={styles.buttonSolid} onClick={resetForm}>
+          nuevo mensaje
+        </button>
+      </Container>
     </>
   );
 };

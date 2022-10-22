@@ -44,10 +44,12 @@ li {
   list-style: none;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
   color: inherit;
 }
+
+
 
 
 @media only screen and (min-width: 460px) {
