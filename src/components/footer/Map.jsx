@@ -8,8 +8,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -32.87106009649117,
-  lng: -68.77875926289552,
+  lat: -32.87101901755689,
+  lng: -68.77884351823357,
 };
 
 const Map = () => {
@@ -40,7 +40,7 @@ const Map = () => {
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
-      <Marker position={{ lat: -32.87106009649117, lng: -68.77875926289552 }} />
+      <Marker position={{ lat: -32.87101901755689, lng: -68.77884351823357 }} />
     </GoogleMap>
   ) : (
     <></>
