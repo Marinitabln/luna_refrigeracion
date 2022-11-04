@@ -8,7 +8,7 @@ import styles from "../../styles/contact.module.css";
 
 const Footer = () => {
   return (
-    <section className={styles.bgBlue}>
+    <footer className={styles.bgBlue}>
       <Container>
         <h3 className={styles.subtitleWhite}>
           cómo <br></br>
@@ -54,7 +54,7 @@ const Footer = () => {
           <br></br>Lunes a viernes, de 9 a 18hs.
         </h6>
       </Container>
-    </section>
+    </footer>
   );
 };
 

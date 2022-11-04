@@ -22,20 +22,20 @@ const Header = () => {
       <div className={styles.divHeader}>
         <Container>
           <Row className={styles.rowFlexEnd}>
-            <Col className={styles.logo} xs={5} md={4} lg={4}>
+            <Col className={styles.logo} xs={5} md={4} lg={6}>
               <Link to="/">
                 <img id="logo" src={logo} alt="logo" />
               </Link>
             </Col>
-            <Col className={styles.whatsappBar} xs={7} md={8} lg={8}>
+            <Col className={styles.whatsappBar} xs={7} md={8} lg={6}>
               <div className={styles.whatsapp}>
                 <a
                   href="https://walink.co/616498"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faWhatsapp} />
-                  <span> CONTACTANOS</span>
+                  <FontAwesomeIcon icon={faWhatsapp} style={{ marginRight: 5 }}/>
+                  <span>CONTACTANOS</span>
                 </a>
               </div>
               <div className={styles.bars}>

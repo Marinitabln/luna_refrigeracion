@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 480px) {
   .sliderBrands {
-    height: 20vh;
+    height: 18vh;
   }
   .swiper-container {
     width: 480px;
@@ -53,7 +53,7 @@
 
 @media screen and (min-width: 640px) {
   .sliderBrands {
-    height: 22vh;   
+    height: 18vh;   
 }
   .swiper-container {
     width: 640px;

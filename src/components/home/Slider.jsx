@@ -10,16 +10,19 @@ import slider3 from "../../assets/img/slider3.jpg";
 const Slider = () => {
   const [media, setMedia] = useState();
 
+  const handleResize = () => {
+    if (width <= 767) {
+      setMedia("500px");
+    } else if (width >= 768 && width <= 991) {
+      setMedia("600px");
+    } else {
+      setMedia("700px");
+    }
+  };
+
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 767) {
-        setMedia("500px");
-      } else if (window.innerWidth >= 768 && window.innerWidth <= 991) {
-        setMedia("400px");
-      } else {
-        setMedia("auto");
-      }
-    };
+    const width = window.innerWidth;
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
