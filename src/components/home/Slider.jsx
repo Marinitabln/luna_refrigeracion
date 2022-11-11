@@ -6,27 +6,22 @@ import styles from "../../styles/slides.module.css";
 import slider1 from "../../assets/img/slider1.jpg";
 import slider2 from "../../assets/img/slider2.jpg";
 import slider3 from "../../assets/img/slider3.jpg";
+import useMediaQuery from "../../hook/useQuery";
 
 const Slider = () => {
   const [media, setMedia] = useState();
 
-  const handleResize = () => {
-    if (width <= 767) {
+  const isMobile = useMediaQuery(768);
+  const isTablet = useMediaQuery(1024);
+
+  useEffect(() => {
+    if (isMobile) {
       setMedia("500px");
-    } else if (width >= 768 && width <= 991) {
+    } else if (isTablet) {
       setMedia("600px");
     } else {
       setMedia("700px");
     }
-  };
-
-  useEffect(() => {
-    const width = window.innerWidth;
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   const navigate = useNavigate();
@@ -101,3 +96,22 @@ const Slider = () => {
 };
 
 export default Slider;
+
+/* const handleResize = () => {
+  
+  if (isMobile) {
+    setMedia("500px");
+  } else if (isTablet) {
+    setMedia("600px");
+  } else {
+    setMedia("700px");
+  }
+};
+
+useEffect(() => {    
+  handleResize();
+  window.addEventListener("resize", handleResize);
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []); */
